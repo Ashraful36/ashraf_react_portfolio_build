@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Admin Panel</title>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
-  <link rel="stylesheet" href="assets/js/style.css">
-</head>
-<body>
-  <h1>Welcome to Admin Panel</h1>
-  <form id="course-form">
-    <input type="text" id="title" placeholder="Course Title" required />
-    <textarea id="description" placeholder="Course Description"></textarea>
-    <select id="type">
-      <option value="Free">Free</option>
-      <option value="Paid">Paid</option>
-    </select>
-    <input type="text" id="price" placeholder="Price (if paid)" />
-    <button type="submit">Add Course</button>
-  </form>
-  <p id="status-message" style="color:green;"></p>
-  <script type="module" src="assets/js/admin.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>admin.html</title><link rel='stylesheet' href='assets/style.css'></head><body>
+<header class="navbar">
+  <div class="logo">Ashraful</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="videos.html">Videos</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+  <button id="mode-toggle">🌓</button>
+</header>
+<h1>Admin Dashboard</h1><p>Future feature: Add courses, view students, manage content</p>
+<footer>
+  <p>&copy; 2025 Md. Ashraful Alam | Connect with me:</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/1FrxR4xyvJ/" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com/@techashraf4977" target="_blank">YouTube</a>
+    <a href="#" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+<script src="assets/js/darkmode.js"></script>
+</body></html>
