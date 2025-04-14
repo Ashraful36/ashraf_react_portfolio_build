@@ -7,8 +7,7 @@ const firebaseConfig = {
   projectId: "ashraf-porportfolio",
   storageBucket: "ashraf-porportfolio.firebasestorage.app",
   messagingSenderId: "494654658505",
-  appId: "1:494654658505:web:afebc33185a8ae4a32fa18",
-  measurementId: "G-5SVHHDN5WB"
+  appId: "1:494654658505:web:afebc33185a8ae4a32fa18"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -25,11 +24,7 @@ onValue(ref(db, "courses"), (snapshot) => {
   Object.entries(data).forEach(([id, course]) => {
     const card = document.createElement("div");
     card.className = "course-card";
-    card.innerHTML = `
-      <h3>${course.title}</h3>
-      <p>${course.description}</p>
-      <p><strong>${course.type}</strong> | ${course.price || "Free"}</p>
-    `;
+    card.innerHTML = `<h3>${course.title}</h3><p>${course.description}</p><p><strong>${course.type}</strong> | ${course.price || "Free"}</p>`;
     courseList.appendChild(card);
   });
 });
