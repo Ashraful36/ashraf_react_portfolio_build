@@ -1,24 +1,15 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>videos.html</title><link rel='stylesheet' href='assets/style.css'></head><body>
-<header class="navbar">
-  <div class="logo">Ashraful</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="videos.html">Videos</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="login.html">Login</a>
-  </nav>
-  <button id="mode-toggle">🌓</button>
-</header>
-<h1>Video Tutorials</h1><iframe width='360' height='215' src='https://www.youtube.com/embed/dQw4w9WgXcQ' allowfullscreen></iframe>
-<footer>
-  <p>&copy; 2025 Md. Ashraful Alam | Connect with me:</p>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/share/1FrxR4xyvJ/" target="_blank">Facebook</a>
-    <a href="https://www.youtube.com/@techashraf4977" target="_blank">YouTube</a>
-    <a href="#" target="_blank">LinkedIn</a>
-  </div>
-</footer>
-<script src="assets/js/darkmode.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Videos</title>
+  <link rel="stylesheet" href="assets/js/style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
+</head>
+<body>
+  <h1>YouTube Videos</h1>
+  <div id="video-list">Loading videos...</div>
+  <script type="module" src="assets/js/loadVideos.js"></script>
+</body>
+</html>
