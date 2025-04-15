@@ -2,16 +2,29 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #f8fafb;
+  background: #eef2f7;
 }
-h1 {
-  color: #1e293b;
+h1, h2 {
+  color: #1e3a8a;
 }
-.video-card, .blog-post {
+form {
   background: #fff;
   padding: 15px;
+  margin-bottom: 30px;
   border-radius: 8px;
-  margin: 15px auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
