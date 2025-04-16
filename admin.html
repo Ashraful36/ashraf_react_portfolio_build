@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="assets/js/style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
+</head>
+<body>
+  <h1>Admin Panel</h1>
+  <form id="courseForm">
+    <h2>Add Course</h2>
+    <input type="text" id="courseTitle" placeholder="Title" required />
+    <textarea id="courseDescription" placeholder="Description" required></textarea>
+    <select id="courseType">
+      <option value="Free">Free</option>
+      <option value="Paid">Paid</option>
+    </select>
+    <input type="text" id="coursePrice" placeholder="Price" required />
+    <button type="submit">Add Course</button>
+  </form>
+
+  <form id="videoForm">
+    <h2>Add Video</h2>
+    <input type="text" id="videoTitle" placeholder="Title" required />
+    <input type="text" id="videoURL" placeholder="YouTube Embed URL" required />
+    <button type="submit">Add Video</button>
+  </form>
+
+  <form id="blogForm">
+    <h2>Add Blog</h2>
+    <input type="text" id="blogTitle" placeholder="Title" required />
+    <textarea id="blogContent" placeholder="Content" required></textarea>
+    <button type="submit">Add Blog</button>
+  </form>
+
+  <script type="module" src="assets/js/admin.js"></script>
+</body>
+</html>
